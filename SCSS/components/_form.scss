@@ -1,0 +1,21 @@
+/* Recherche Localisation */
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    background-color: $colour-form;
+    box-shadow: inset 0px 10px 5px -5px $colour-shadow;
+    i {
+        display: inline-block;
+        font-size: 20px;
+        color:$colour-localisation;
+    }
+    input {
+        text-align: center;
+        background-color: $colour-form;
+        border: transparent;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

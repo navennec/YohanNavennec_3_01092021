@@ -1,0 +1,62 @@
+/* Fonctionnement */
+.fonctionnement {
+    width: 95%;
+    margin: auto;
+    @include tablette {
+        width: 50%;
+        text-align: center;
+    }
+    &_tableau {
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &_menu {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        &_numero {
+            border: 1px solid $colour-primary;
+            border-radius: 100px;
+            padding: 0 5px 0 5px;
+            background-color: $colour-primary;
+            color: $colour-btnfont;
+            position: relative;
+            left: 17px;
+            z-index: 2;           
+        }
+        &_explication {
+            display: flex;
+            align-items: center;
+            margin: auto;
+            margin-left: 5px;
+            width: 80vw;
+            border: 1px solid $colour-backgroundintro;
+            border-radius: 15px;
+            background-color: $colour-backgroundintro;
+            box-shadow: 5px 5px 10px $colour-shadow;
+            position: relative;
+            z-index: 1;
+            @include tablette {
+                width: 45vw;
+            }
+            @include desktop {
+                padding-right: 15px;
+                width: auto;
+            }
+            &:hover {
+                background-color: lighten($colour-primary, 35%);
+                border: 1px solid lighten($colour-primary, 35%);
+                box-shadow: 5px 5px 10px darken($colour-shadow, 10%);
+                & > i {
+                    color: $colour-primary;
+                }
+            }
+            & i {
+                padding: 0 20px 0 30px;
+                color: $colour-localisation;
+            }
+        }
+    }
+}

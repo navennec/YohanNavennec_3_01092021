@@ -1,0 +1,23 @@
+/* Bouton Recherche Restaurant */
+.search_restaurant {
+    background-color: $colour-backgroundintro;
+    padding: 30px 0 60px 0;
+    h1 {
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0px;
+    }
+    p {
+        font-size: 22px;
+        text-align: center;
+        margin: 0 10px 40px 10px;
+    }
+    .btn {
+        @include bouton;
+    }
+    .commander {
+        padding-left: 40px;
+        padding-right: 40px;
+    }   
+}

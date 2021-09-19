@@ -1,0 +1,73 @@
+/* Restaurants */
+.restaurants {
+    background-color: $colour-backgroundintro;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    & h2 {
+        margin-left: 17px;
+    }
+    &_tableau {
+        @include both {
+            @include grid-menu;
+        }
+    }
+    & h2 {
+        padding: 30px 0 0 10px;
+    }
+    &_liste {
+        width: 95%;
+        margin: auto;
+        padding-bottom: 10px;
+        border: 1px solid $colour-backgroundintro;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        background-color: $colour-btnfont;
+        box-shadow: 0 0 10px $colour-shadow;
+        position: relative;
+        &:hover {
+            box-shadow: 0 0 10px $colour-primary;
+            cursor: pointer;
+        }
+        & img {
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+            @include tablette {
+                height: 30vh;
+            }
+            @include desktop {
+                height: 30vh;
+            }
+        }
+        &_localisation {
+            margin: 0 40px 0 10px;
+            &_info {
+                line-height: 5px;
+                font-size: 1.4em;
+            }
+        }
+        &_nouveau {
+           position: absolute;
+           z-index: 1;
+           top: 15px;
+           right:15px;
+           padding: 5px 10px 5px 10px;
+           border: 1px solid $colour-tertiary;
+           border-radius: 3px;
+           background-color: $colour-tertiary;
+           &_texte {
+               margin: 0;
+               font-weight: bold;
+               color: $colour-nouveau;
+           }
+        }
+        &_heart {
+            font-size: 35px;
+            position: absolute;
+            right: 65px;
+            bottom: 70px;
+            @include coeur;
+        }
+    }
+}

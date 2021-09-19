@@ -1,0 +1,29 @@
+  
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    color: $colour-btnfont;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    @include desktop {
+       max-width: 1200px;
+    }
+}
