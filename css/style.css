@@ -423,6 +423,7 @@ body {
 .restaurants_liste_localisation_info {
   line-height: 5px;
   font-size: 1.4em;
+  padding: 1rem;
 }
 .restaurants_liste_nouveau {
   position: absolute;
@@ -723,4 +724,4 @@ body {
   padding-right: 40px;
 }
 
-/*# sourceMappingURL=style.css.map */
+
