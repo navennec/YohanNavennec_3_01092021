@@ -1,0 +1,75 @@
+/* Bouton */
+@mixin bouton {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    background: $colour-bouton;
+    color: $colour-btnfont;
+    box-shadow: 0 0 10px $colour-shadow;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px darken($colour-shadow, 40%);
+        opacity: 0.8;
+    }
+}
+
+/* Alignement restaurant en desktop */
+@mixin grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+/* Les coeurs */
+@mixin coeur {
+    color: $colour-localisation;
+    &--empty {
+        position: absolute;
+        z-index: 2;
+        &:hover {
+            animation: vide 1s forwards linear;
+            cursor: pointer;
+            & + i {
+                opacity: 1;
+                transform: scale(1);
+                transition: transform 1s linear;
+            }
+        }  
+    }
+    &--full {
+        position: absolute;
+        opacity: 0;
+        background: linear-gradient(to top, $colour-secondary, $colour-primary);
+        -webkit-background-clip: text;
+        color: transparent;
+        transform-origin: bottom;
+        transform:scale(0);
+    }
+}
+
+/* Media Query tablette */
+@mixin tablette {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+/* Media Query desktop */
+@mixin desktop {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+/* Media Query tablette et desktop */
+@mixin both {
+    @media (min-width: 768px) {
+        @content;
+    }  
+}
