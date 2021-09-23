@@ -1,0 +1,18 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./css/style.css",
+    "prefix": "postcss ./public/css/style.css use autoprefixer -d ./public/css/prefixed/"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navennec/YohanNavennec_3_01092021/tree/master"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+  }

@@ -464,7 +464,8 @@ body {
   position: absolute;
   opacity: 0;
   background: linear-gradient(to top, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
+  -webkit-background-clip:text;
+  background-clip:text;
   color: transparent;
   transform-origin: bottom;
   transform: scale(0);
