@@ -47,6 +47,7 @@
         opacity: 0;
         background: linear-gradient(to top, $colour-secondary, $colour-primary);
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
         transform-origin: bottom;
         transform:scale(0);
